@@ -34,10 +34,10 @@ function App() {
         </div>
         <Container fluid>
           <Row>
-            <Col style={{ backgroundColor: "red" }}>
+            <Col style={{ backgroundColor: "unset" }}>
               asd
             </Col>
-            <Col style={{ backgroundColor: "blue" }}>
+            <Col style={{ backgroundColor: "unset" }}>
               asd
             </Col>
           </Row>
