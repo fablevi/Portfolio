@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Button, Provider, defaultTheme } from "@adobe/react-spectrum"
 
 function App() {
+  if (localStorage.getItem("componentScheme") == 'undefined') {
+    localStorage.setItem("componentScheme", "light");
+  }
+
+  const [componentScheme, setComponentScheme] = useState(localStorage.getItem("componentScheme"));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <Provider theme={defaultTheme}>
+        <Button
+          variant="secoundary"
+          onClick={()=>{console.log(defaultTheme)}}
         >
-          Szeretem Pali Szimonettát
-        </a>
-      </header>
-    </div>
+          Hello React Spectrum!
+        </Button>
+      </Provider>
+    </>
   );
 }
 
