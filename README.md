@@ -1,3 +1,3 @@
 My portfolio website. 🙂 Here is the link:
 
-[Website](https://fablevi.github.io/portfolio/build/)
+<a href="https://fablevi.github.io/portfolio/build/" target="_blank">Website</a>
