@@ -1,8 +1,12 @@
-html,body, #root, #prov{
-    margin:0px !important;
+html,
+body,
+#root,
+#prov {
+    margin: 0px !important;
     min-height: 100vh;
 }
 
-.rowextra, .colextra{
+.rowextra,
+.colextra {
     min-height: 100vh;
 }
