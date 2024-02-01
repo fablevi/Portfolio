@@ -8,8 +8,8 @@ function SchemeChangerButton(props){
     return <>
         <Button onPress={()=>{props.changeComponentScheme()}}>
             {props.componentScheme === "light"?
-              <> <div style={{marginRight:"5px"}}><LightIcon width={"20"} height={"20"}/></div></> :
-              <> <div style={{marginRight:"5px"}}><DarkIcon width={"20"} height={"20"}/></div></>}
+              <> <div ><LightIcon styling={{marginRight:"5px"}} width={"20"} height={"20"}/>Light</div></> :
+              <> <div ><DarkIcon styling={{marginRight:"5px"}} width={"20"} height={"20"}/>Dark</div></>}
             
           </Button>
     </>

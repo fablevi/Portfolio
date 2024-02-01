@@ -4,8 +4,8 @@ import AvatarIMG from "../../images/avatar.jpg";
 
 function Avatar() {
 
-    return <div >
-        <Image className="avatarImage" src={AvatarIMG} roundedCircle />
+    return <div>
+        <Image className="avatarImage avatarImageCorner" src={AvatarIMG} />
     </div>
 
 }

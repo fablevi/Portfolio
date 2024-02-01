@@ -1,9 +1,37 @@
+.containerBG{
+   
+}
+
 .avatarImage{
     width: 95%;
     height: 95%;
     object-fit: cover;
     margin: 2.5%;
+}
+
+.avatarImageDiv{
+    float: left;
+    width: 50%;
+    margin: 10px;
+}
+
+.avatarImageCorner{
+    border-radius: 8%;
+}
+
+.avatarImageBG {
+    background-color: deepskyblue;
+    border-radius: 10%;
     border-color: gray;
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
+}
+
+.dialogDiv{
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: rgba(216, 216, 216, 0.144);
 }

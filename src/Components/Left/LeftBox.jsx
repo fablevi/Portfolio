@@ -13,12 +13,33 @@ function LeftBox(props) {
             <Row>
                 <Col>
                     <Row style={{ marginTop: "2%" }}>
-                        <Col>
-                            <Avatar />
-                        </Col>
-                        <Col>
-                            <HowAmI/>
-                        </Col>
+                        {props.width <= 640 ?
+                            <>
+                                <Col>
+                                    <div className="avatarImageDiv">
+                                        <div className="avatarImageBG">
+                                            <Avatar />
+                                        </div>
+                                    </div>
+                                    <HowAmI />
+                                </Col>
+                            </>
+                            :
+                            <>
+                                <Col>
+                                    <div className="avatarImageBG">
+                                        <Avatar />
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <HowAmI />
+                                </Col>
+                            </>
+                        }
+
+                    </Row>
+                    <Row>
+                        asd
                     </Row>
                 </Col>
             </Row>
