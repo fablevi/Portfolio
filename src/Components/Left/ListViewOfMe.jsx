@@ -4,17 +4,17 @@ function ListViewOfMe(props) {
 
     return <>
         <div className="listviewofme">
-            <Well  >
+            <Well UNSAFE_style={{backgroundColor:"rgba(0, 191, 255, 0.356)"}} >
                 <div onClick=  {() => {}}>
                     👨‍🎓 My degries ➡️
                 </div>
             </Well>
-            <Well >
+            <Well  UNSAFE_style={{backgroundColor:"rgba(0, 191, 255, 0.356)"}}>
                 <div onClick=  {() => {}}>
                     🤹 My skills ➡️
                 </div>
             </Well>
-            <Well >
+            <Well  UNSAFE_style={{backgroundColor:"rgba(0, 191, 255, 0.356)"}}>
                 <div onClick=  {() => {}}>
                     🔨 My projects ➡️
                 </div>
