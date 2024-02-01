@@ -5,18 +5,26 @@ import SchemeChangerButton from "./SchemeChangerButton";
 
 function DialogMenu(props) {
     return <>
-        <DialogTrigger type="popover" mobileType="tray" placement="bottom" shouldFlip={false}>
+        <DialogTrigger type="popover" mobileType="popover" placement="bottom" shouldFlip={false}>
             <ActionButton>
                 <HamburgerMenu width={24} height={24} />
             </ActionButton>
-            <Dialog width={"size-0"}>
-                <Content>
-                        <Text>
-                            <SchemeChangerButton componentScheme={props.componentScheme} changeComponentScheme={props.changeComponentScheme}/>
-                            <Button>About me </Button>
-                            <Button>How to contact? </Button>
-                        </Text>
-                    </Content>
+            <Dialog width={"size-0"} >
+                <Content  >
+                    <Text>
+                        <div className="flexChildren">
+                            <div className="margin5px dialogButton">
+                                <SchemeChangerButton componentScheme={props.componentScheme} changeComponentScheme={props.changeComponentScheme} />
+                            </div>
+                            <div className="margin5px dialogButton">
+                                <Button UNSAFE_className="dialogButton">About me </Button>
+                            </div>
+                            <div className="margin5px dialogButton">
+                                <Button UNSAFE_className="dialogButton">How to contact? </Button>
+                            </div>
+                        </div>
+                    </Text>
+                </Content>
             </Dialog>
         </DialogTrigger>
     </>

@@ -1,5 +1,5 @@
 .containerBG{
-   
+
 }
 
 .avatarImage{
@@ -10,9 +10,11 @@
 }
 
 .avatarImageDiv{
-    float: left;
-    width: 50%;
+    width: 40%;
+    aspect-ratio: 1/1;
     margin: 10px;
+    margin-right: 10px;
+    float: left;
 }
 
 .avatarImageCorner{
@@ -34,4 +36,18 @@
     justify-content: space-between;
     align-content: center;
     background-color: rgba(216, 216, 216, 0.144);
+}
+
+.margin5px{
+    margin: 5px;
+}
+
+.flexChildren{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dialogButton{
+    width: 100%;
 }

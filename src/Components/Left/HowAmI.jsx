@@ -2,7 +2,7 @@ function HowAmI() {
 
 
 
-    return <div>
+    return <div style={{textAlign:"justify"}}>
         <h1>How Am I?</h1>
 
         <div className="whoami">Hi! I'm Levi, a programmer.</div>
