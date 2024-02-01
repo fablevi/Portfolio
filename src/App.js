@@ -52,7 +52,7 @@ function App() {
                 <DialogMenu componentScheme={componentScheme} changeComponentScheme={changeComponentScheme}/>
               </div> 
             :null}
-          <Col className="colextra" style={{ backgroundColor: "unset" }} md={6} xs={12}>
+          <Col className={width <= 768 ? "" : "colextra"} style={{ backgroundColor: "unset" }} md={6} xs={12}>
             <LeftBox width={width} componentScheme={componentScheme} />
           </Col>
           <Col className="colextra" style={{ backgroundColor: "unset" }} md={6} xs={12}>

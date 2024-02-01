@@ -3,6 +3,7 @@ import { Row, Col, Container } from "react-bootstrap";
 
 import Avatar from "./Avatar";
 import HowAmI from "./HowAmI";
+import ListViewOfMe from "./ListViewOfMe";
 
 
 //768
@@ -10,10 +11,10 @@ function LeftBox(props) {
 
     return <>
         <Container fluid>
-            <Row>
-                <Col>
-                    <Row style={{ marginTop: "2%" }}>
-                        {props.width <= 640 ?
+            <Row className={props.width <= 768 ? "" : "rowextra"}>
+                <Col className={props.width <= 768 ? "" : "colextra colFlex"}>
+                    <Row className="colFlexdiv1" style={{ marginTop: "2%" }}>
+                        {props.width <= 950 ?
                             <>
                                 <Col>
                                     <div className="avatarImageDiv">
@@ -38,9 +39,13 @@ function LeftBox(props) {
                         }
 
                     </Row>
-                    <Row>
-                        asd
-                    </Row>
+                    {props.width <= 768 ?
+                        null :
+                        <Row className="colFlexdiv2">
+                            <ListViewOfMe />
+                        </Row>
+                    }
+
                 </Col>
             </Row>
         </Container>

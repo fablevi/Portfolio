@@ -1,5 +1,5 @@
 .containerBG{
-
+    min-height: 100vh;
 }
 
 .avatarImage{
@@ -27,6 +27,7 @@
     border-color: gray;
     border-width: 1px;
     border-style: solid;
+    object-fit: cover;
 }
 
 .dialogDiv{
@@ -50,4 +51,30 @@
 
 .dialogButton{
     width: 100%;
+}
+
+.colFlex{
+    display: flex;
+  flex-direction: column;
+}
+
+.colFlexdiv1{
+    flex: 1;
+}
+
+.colFlexdiv2{
+height: 100%;
+}
+
+.listviewofme{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.listviewofme > div{
+    width: 80%;
+    margin-left: 10%;
 }
