@@ -10,3 +10,12 @@ body,
 .colextra {
     min-height: 100vh;
 }
+
+.rightBoxInfoDivScroll::-webkit-scrollbar {
+    display: none;
+}
+
+.rightBoxInfoDivScroll{
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
