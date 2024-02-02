@@ -5,6 +5,8 @@
     font-style: normal;
   }
 
+ 
+
   @media only screen and (min-width: 768px) {
     * {
       font-size: 18px;
@@ -26,34 +28,7 @@
 
 .containerBG{
     min-height: 100vh;
-}
-
-.avatarImage{
-    width: 95%;
-    height: 95%;
-    object-fit: cover;
-    margin: 2.5%;
-}
-
-.avatarImageDiv{
-    width: 40%;
-    aspect-ratio: 1/1;
-    margin: 10px;
-    margin-right: 10px;
-    float: left;
-}
-
-.avatarImageCorner{
-    border-radius: 8%;
-}
-
-.avatarImageBG {
-    background-color: deepskyblue;
-    border-radius: 10%;
-    border-color: gray;
-    border-width: 1px;
-    border-style: solid;
-    object-fit: cover;
+    background-color: #0d6efd36;
 }
 
 .dialogDiv{
@@ -98,9 +73,57 @@ height: 100%;
     justify-content: space-evenly;
     margin-top: 15%;
     margin-bottom: 15%;
+    max-height: 400px;
 }
 
 .listviewofme > div{
     width: 80%;
     margin-left: 10%;
+}
+
+.contact{
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+.rightSchemeButton{
+  display: flex;
+  justify-content: right;
+  margin-top: 10px;
+  height: 5vh;
+  margin-right: 1vh;
+}
+
+.rightSchemeButton > button{
+  max-height: 50px;
+}
+
+@media only screen and (max-height: 740px ) {
+  .rightSchemeButton > button{
+    position: absolute;
+  }
+}
+
+.rightBoxInfoDivScroll{
+  height: 87vh;
+  overflow-x: auto;
+  margin: 2vh;
+}
+
+.rightBoxInfoDivNoScroll{
+
+}
+
+.rightBoxInfoDivBG{
+  background: rgb(0 203 255 / 24%);
+  height: 91.5vh;
+  padding: 1vh;
+  margin: 1vh;
+  border-radius: 10px;
+}
+.rightBoxInfoDivBGMobil{
+  background: rgb(0 203 255 / 24%);
+  padding: 1vh;
+  margin: 1vh;
+  border-radius: 10px;
 }

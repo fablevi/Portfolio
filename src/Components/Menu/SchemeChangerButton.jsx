@@ -1,4 +1,4 @@
-import { Button, Provider, defaultTheme } from "@adobe/react-spectrum"
+import { Button } from "react-bootstrap";
 
 import LightIcon from "../../icons_set/LightIcon.jsx";
 import DarkIcon from "../../icons_set/DarkIcon.jsx";
@@ -6,13 +6,15 @@ import DarkIcon from "../../icons_set/DarkIcon.jsx";
 function SchemeChangerButton(props){
 
     return <>
-        <Button UNSAFE_className="dialogButton" onPress={()=>{props.changeComponentScheme()}}>
+        <Button variant={props.componentScheme === "light" ? "outline-dark": "outline-light"} onClick={()=>{props.changeComponentScheme()}}>
             {props.componentScheme === "light"?
-              <> <div ><LightIcon styling={{marginRight:"5px"}} width={"20"} height={"20"}/>Light</div></> :
-              <> <div ><DarkIcon styling={{marginRight:"5px"}} width={"20"} height={"20"}/>Dark</div></>}
+              <> <div ><LightIcon  width={"20"} height={"20"}/></div></> :
+              <> <div ><DarkIcon width={"20"} height={"20"}/></div></>}
             
           </Button>
     </>
 }
 
 export default SchemeChangerButton;
+
+//

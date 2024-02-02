@@ -1,9 +1,9 @@
 import { defaultTheme } from "@adobe/react-spectrum"
 import { Row, Col, Container } from "react-bootstrap";
 
-import Avatar from "./Avatar";
 import HowAmI from "./HowAmI";
 import ListViewOfMe from "./ListViewOfMe";
+import Contact from "./Contact";
 
 
 //768
@@ -14,7 +14,36 @@ function LeftBox(props) {
             <Row className={props.width <= 768 ? "" : "rowextra"}>
                 <Col className={props.width <= 768 ? "" : "colextra colFlex"}>
                     <Row className="colFlexdiv1" style={{ marginTop: "2%" }}>
-                        {props.width <= 950 ?
+                    {props.width > 768 ?
+                        <HowAmI />:
+                        <div style={{width:"80%"}}>
+                            <HowAmI/>
+                        </div>
+                    }
+
+                    </Row>
+                    <Row>
+                        <Col>
+                            <Contact/>
+                        </Col>
+                    </Row>
+                    {props.width <= 768 ?
+                        null :
+                        <Row className="colFlexdiv2">
+                            <ListViewOfMe />
+                        </Row>
+                    }
+
+                </Col>
+            </Row>
+        </Container>
+    </>
+}
+
+export default LeftBox;
+
+/*
+{props.width <= 950 ?
                             <>
                                 <Col>
                                     <div className="avatarImageDiv">
@@ -37,19 +66,4 @@ function LeftBox(props) {
                                 </Col>
                             </>
                         }
-
-                    </Row>
-                    {props.width <= 768 ?
-                        null :
-                        <Row className="colFlexdiv2">
-                            <ListViewOfMe />
-                        </Row>
-                    }
-
-                </Col>
-            </Row>
-        </Container>
-    </>
-}
-
-export default LeftBox;
+*/

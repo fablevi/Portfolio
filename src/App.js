@@ -4,7 +4,7 @@ import { Row, Col, Container } from "react-bootstrap";
 import "./App.css"
 
 import LeftBox from "./Components/Left/LeftBox.jsx";
-import DialogMenu from "./Components/Menu/DialogMenu.jsx";
+import RightBox from "./Components/Right/RightBox.jsx";
 import SchemeChangerButton from "./Components/Menu/SchemeChangerButton.jsx";
 
 function App() {
@@ -49,15 +49,14 @@ function App() {
                 <div style={{fontSize:"26px"}}>
                   Fábián Levente
                 </div>
-                <DialogMenu componentScheme={componentScheme} changeComponentScheme={changeComponentScheme}/>
+                <SchemeChangerButton componentScheme={componentScheme} changeComponentScheme={changeComponentScheme}/>
               </div> 
             :null}
           <Col className={width <= 768 ? "" : "colextra"} style={{ backgroundColor: "unset" }} md={6} xs={12}>
             <LeftBox width={width} componentScheme={componentScheme} />
           </Col>
           <Col className="colextra" style={{ backgroundColor: "unset" }} md={6} xs={12}>
-            CONTACT ME!!!
-            {width >= 768? <DialogMenu componentScheme={componentScheme} changeComponentScheme={changeComponentScheme}/>:null}
+            <RightBox width={width} componentScheme={componentScheme} changeComponentScheme={changeComponentScheme}/>
           </Col>
         </Row>
       </Container>
