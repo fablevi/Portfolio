@@ -1,0 +1,17 @@
+.containerBG>div::before {
+    background: radial-gradient(1000px circle at var(--mouse-x) var(--mouse-y),
+        rgb(0 203 255 / 15%),
+            transparent 40%);
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+}
+
+.containerBG>div{
+    position: relative;
+}
