@@ -131,20 +131,27 @@
 .scrollboxHover {
   position: absolute;
   overflow-x: auto;
-  height: -webkit-fill-available;
+  /*height: -moz-avalabe;
+  height: -webkit-fill-available;*/
   top: 0;
   left: 0;
-  width: -webkit-fill-available;
+  /*width: -moz-available ;*/
   backdrop-filter: blur(3px);
+  width: -webkit-fill-available;
+  width: -moz-available;
+  height: inherit;
 }
 
 .scrollboxHoverVisibilityHidden {
   position: absolute;
   overflow-x: auto;
-  height: -webkit-fill-available;
+  /*height: -moz-avalabe;
+  height: -webkit-fill-available;*/
   top: 0;
   left: 0;
   width: -webkit-fill-available;
+  width: -moz-available;
+  height: inherit;
   animation-name: scrollboxHoverVisibilityHidden;
   animation-duration: 1s;
 }
