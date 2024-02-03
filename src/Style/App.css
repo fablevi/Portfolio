@@ -37,7 +37,7 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
-  background-color: rgba(216, 216, 216, 0.144);
+  background: linear-gradient( to right, rgb(0 203 255 / 72%) 0%, rgb(0 238 255 / 43%) 100% );
 }
 
 .margin5px {
@@ -81,11 +81,6 @@
   margin-left: 10%;
 }
 
-.contact {
-  margin-top: 8%;
-  margin-bottom: 8%;
-}
-
 .rightSchemeButton {
   display: flex;
   justify-content: right;
@@ -110,7 +105,9 @@
   margin: 2vh;
 }
 
-.rightBoxInfoDivNoScroll {}
+.rightBoxInfoDivNoScroll {
+  margin: 2vh;
+}
 
 .rightBoxInfoDivBG {
   background: rgb(0 203 255 / 24%);
@@ -131,22 +128,19 @@
 .scrollboxHover {
   position: absolute;
   overflow-x: auto;
-  /*height: -moz-avalabe;
-  height: -webkit-fill-available;*/
   top: 0;
   left: 0;
-  /*width: -moz-available ;*/
   backdrop-filter: blur(3px);
   width: -webkit-fill-available;
   width: -moz-available;
   height: inherit;
+  margin: 1vh;
 }
 
 .scrollboxHoverVisibilityHidden {
+  margin: 1vh;
   position: absolute;
   overflow-x: auto;
-  /*height: -moz-avalabe;
-  height: -webkit-fill-available;*/
   top: 0;
   left: 0;
   width: -webkit-fill-available;
@@ -173,4 +167,17 @@
   justify-content: center;
   flex-direction: column;
   height: 100%;
+}
+
+
+.contact {
+  margin-top: 8%;
+  margin-bottom: 8%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-link{
+  margin-left: 6px;
+  margin-right: 6px;
 }

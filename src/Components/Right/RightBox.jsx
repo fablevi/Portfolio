@@ -1,7 +1,11 @@
+import { useState } from "react";
 import SchemeChangerButton from "../Menu/SchemeChangerButton";
 import ScrollBox from "./ScrollBox";
 
 function RightBox(props) {
+
+    const [scrollBoxVisibility,setScrollBoxVisibility] = useState(true)
+
     return <>
         {props.width >= 768 ? <div className="rightSchemeButton">
             <SchemeChangerButton componentScheme={props.componentScheme} changeComponentScheme={props.changeComponentScheme} />
@@ -10,7 +14,7 @@ function RightBox(props) {
             null}
         <div className={props.width >= 768 ? "rightBoxInfoDivBG" : "rightBoxInfoDivBGMobil"}>
             {props.width >= 768 ?
-                <ScrollBox colorScheme={props.componentScheme} />
+                <ScrollBox visibility={scrollBoxVisibility} setVisibility={setScrollBoxVisibility} colorScheme={props.componentScheme} />
                 :
                 null}
             <div className={props.width >= 768 ? "rightBoxInfoDivScroll" : "rightBoxInfoDivNoScroll"}>

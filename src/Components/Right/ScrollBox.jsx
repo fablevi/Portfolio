@@ -3,17 +3,17 @@ import { useState } from "react";
 function ScrollBox(props) {
 
     const [visibility, setVisibility] = useState(true)
-    const [componentVisibility, setComponentVisibility] = useState(true)
 
     function setVisibilityTimeOut(){
             setVisibility(false)
             setTimeout(()=>{
-                setComponentVisibility(false)
+                props.setVisibility(false)
             },900)
     }
 
     return <>
-        {componentVisibility?<div className={visibility?"scrollboxHover":"scrollboxHoverVisibilityHidden"} onMouseOver={setVisibilityTimeOut}>
+        {props.visibility?
+        <div className={visibility?"scrollboxHover":"scrollboxHoverVisibilityHidden"} onMouseOver={setVisibilityTimeOut}>
             <div className="hoverFlexDiv">
             <svg style={{alignSelf:"center", maxWidth:"500px"}} fill={props.colorScheme === "light" ? "black" : " white"} height={"90%"} width={"90%"} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>

@@ -40,7 +40,6 @@ function App() {
 
   useEffect(()=>{
     const cursorAnimationDiv = document.getElementById('containerBG').firstChild
-    console.log(cursorAnimationDiv)
     cursorAnimationDiv.removeEventListener("mousemove", mouseMoved)
     cursorAnimationDiv.addEventListener("mousemove", mouseMoved)
   },[])

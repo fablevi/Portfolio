@@ -24,13 +24,13 @@ function LeftBox(props) {
                     </Row>
                     <Row>
                         <Col>
-                            <Contact/>
+                            <Contact width={props.width} componentScheme={props.componentScheme}/>
                         </Col>
                     </Row>
                     {props.width <= 768 ?
                         null :
                         <Row className="colFlexdiv2">
-                            <ListViewOfMe />
+                            <ListViewOfMe/>
                         </Row>
                     }
 
