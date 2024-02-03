@@ -4,21 +4,21 @@ function ListViewOfMe(props) {
 
     return <>
         <div className="listviewofme">
-            <Well UNSAFE_style={{backgroundColor:"rgba(0, 191, 255, 0.356)"}} >
-                <div onClick=  {() => {}}>
+            <a href="#div1" className="contact-link-a">
+                <Well UNSAFE_style={{ backgroundColor: "rgba(0, 191, 255, 0.356)" }} >
                     👨‍🎓 My degries ➡️
-                </div>
-            </Well>
-            <Well  UNSAFE_style={{backgroundColor:"rgba(0, 191, 255, 0.356)"}}>
-                <div onClick=  {() => {}}>
+                </Well>
+            </a>
+            <a href="#div2" className="contact-link-a">
+                <Well UNSAFE_style={{ backgroundColor: "rgba(0, 191, 255, 0.356)" }}>
                     🤹 My skills ➡️
-                </div>
-            </Well>
-            <Well  UNSAFE_style={{backgroundColor:"rgba(0, 191, 255, 0.356)"}}>
-                <div onClick=  {() => {}}>
+                </Well>
+            </a>
+            <a className="contact-link-a">
+                <Well UNSAFE_style={{ backgroundColor: "rgba(0, 191, 255, 0.356)" }}>
                     🔨 My projects ➡️
-                </div>
-            </Well>
+                </Well>
+            </a>
         </div>
     </>
 }

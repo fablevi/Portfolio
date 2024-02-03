@@ -5,7 +5,9 @@
   font-style: normal;
 }
 
-
+.smoothScroll {
+  scroll-behavior: smooth;
+}
 
 @media only screen and (min-width: 768px) {
   * {

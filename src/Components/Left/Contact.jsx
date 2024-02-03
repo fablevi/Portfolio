@@ -1,3 +1,4 @@
+import DiscordIcon from "../../icons_set/DiscordIcon";
 import GithubIcon from "../../icons_set/GithubIcon";
 import GmailIcon from "../../icons_set/GmailIcon";
 import InstaIcon from "../../icons_set/InstaIcon";
@@ -26,16 +27,21 @@ function Contact(props) {
                 <InstaIcon width={"48"} height={"48"} />
             </div>
         </a>
+        <a className="contact-link-a" href="https://discordapp.com/users/434645575074447361" target="_blank">
+            <div className="contact-link">
+                <DiscordIcon width={"48"} height={"48"} />
+            </div>
+        </a>
     </>
 
     return <>
         <div className="contact">
             {props.width > 768 ?
                 <>
-                    <div style={{ width: "50%", display: "flex", justifyContent: "space-evenly" }}>
+                    <div style={{ width: props.width > 1350 ? "50%":"70%", display: "flex", justifyContent: "space-evenly" }}>
                         {components}
                     </div>
-                    <div style={{ width: "50%" }}></div>
+                    <div style={{ width: props.width > 1350 ? "50%":"30%"}}></div>
                 </>
                 :
                 components
