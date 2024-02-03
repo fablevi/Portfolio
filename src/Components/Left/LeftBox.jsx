@@ -15,7 +15,13 @@ function LeftBox(props) {
                 <Col className={props.width <= 768 ? "" : "colextra colFlex"}>
                     <Row className="colFlexdiv1" style={{ marginTop: "2%" }}>
                     {props.width > 768 ?
-                        <HowAmI />:
+                        props.width >1600?
+                            <div style={{width:"60%"}}>
+                                <HowAmI />
+                            </div>
+                                :
+                            <HowAmI />
+                        :
                         <div style={{width:"80%"}}>
                             <HowAmI/>
                         </div>
