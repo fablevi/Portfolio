@@ -35,7 +35,7 @@
   justify-content: center;
 }
 
-.containerBG >div{
+.containerBG>div {
   max-width: 1920px;
 }
 
@@ -45,7 +45,7 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
-  background: linear-gradient( to right, rgb(0 203 255 / 72%) 0%, rgb(0 238 255 / 43%) 100% );
+  background: linear-gradient(to right, rgb(0 203 255 / 72%) 0%, rgb(0 238 255 / 43%) 100%);
 }
 
 .margin5px {
@@ -185,21 +185,59 @@
   justify-content: space-evenly;
 }
 
-.contact-link{
+.contact-link {
   margin-left: 6px;
   margin-right: 6px;
 }
 
-.contact-link-a{
-  color:unset;
+.contact-link-a {
+  color: unset;
   text-decoration: none;
 }
 
-.contact-link-a-hover > div{
+.contact-link-a-hover>div {
   position: relative;
   transition: 0.3s ease-out 100ms;
 }
 
-.contact-link-a-hover:hover > div {
+.contact-link-a-hover:hover>div {
   padding-left: 35px;
+}
+
+.myCard {
+  margin: 5%;
+  background-color: rgb(0 206 255 / 60%);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.schoolIMGDiv > img {
+  width: 100%;
+  border-color: lightgray;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.schoolIMGDiv{
+  margin-bottom: 2%;
+}
+
+.schoolShortListDiv{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(255 0 45 / 10%);
+}
+
+.schoolIMGFlexBox{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.schoolIMGFlexBoxDivs{
+  display: flex;
+  background-color: rgb(0 206 255 / 60%);
+  border-radius: 5px;
+  padding:5px 10px 5px 10px;
+  margin: 2.5px;
+
 }

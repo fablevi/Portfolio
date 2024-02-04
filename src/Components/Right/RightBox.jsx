@@ -22,7 +22,7 @@ function RightBox(props) {
                 null}
             <div className={props.width >= 768 ? "rightBoxInfoDivScroll smoothScroll" : "rightBoxInfoDivNoScroll smoothScroll"}>
                 <div id="schools">
-                    <Schools   />
+                    <Schools width={props.width} componentScheme={props.componentScheme}/>
                 </div>
                 <div id="projects">
                     div2
