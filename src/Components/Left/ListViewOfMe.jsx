@@ -4,19 +4,19 @@ function ListViewOfMe(props) {
 
     return <>
         <div className="listviewofme">
-            <a href="#div1" className="contact-link-a">
+            <a href="#schools" className="contact-link-a contact-link-a-hover">
                 <Well UNSAFE_style={{ backgroundColor: "rgba(0, 191, 255, 0.356)" }} >
-                    👨‍🎓 My degries ➡️
+                    👨‍🎓  Schools and studies ➡️
                 </Well>
             </a>
-            <a href="#div2" className="contact-link-a">
+            <a href="#projects" className="contact-link-a contact-link-a-hover">
                 <Well UNSAFE_style={{ backgroundColor: "rgba(0, 191, 255, 0.356)" }}>
-                    🤹 My skills ➡️
+                    🔨 Open source projects ➡️
                 </Well>
             </a>
-            <a className="contact-link-a">
+            <a href="#skills" className="contact-link-a contact-link-a-hover">
                 <Well UNSAFE_style={{ backgroundColor: "rgba(0, 191, 255, 0.356)" }}>
-                    🔨 My projects ➡️
+                    🤹 Learned skills ➡️
                 </Well>
             </a>
         </div>

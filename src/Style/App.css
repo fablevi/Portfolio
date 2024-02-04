@@ -31,6 +31,12 @@
 .containerBG {
   min-height: 100vh;
   background-color: #0d6efd36;
+  display: flex;
+  justify-content: center;
+}
+
+.containerBG >div{
+  max-width: 1920px;
 }
 
 .dialogDiv {
@@ -186,4 +192,14 @@
 
 .contact-link-a{
   color:unset;
+  text-decoration: none;
+}
+
+.contact-link-a-hover > div{
+  position: relative;
+  transition: 0.3s ease-out 100ms;
+}
+
+.contact-link-a-hover:hover > div {
+  padding-left: 35px;
 }

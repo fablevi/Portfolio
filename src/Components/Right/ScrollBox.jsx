@@ -35,14 +35,3 @@ function ScrollBox(props) {
 }
 
 export default ScrollBox;
-
-/*
-    position: absolute;
-    overflow-x: auto;
-    margin: 2vh;
-
-    height: -webkit-fill-available;
-    top: 0;
-    left: 0;
-    width: -webkit-fill-available;
-*/

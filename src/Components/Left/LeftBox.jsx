@@ -28,12 +28,13 @@ function LeftBox(props) {
                     }
 
                     </Row>
+                    {props.width >= 768 ?
                     <Row>
                         <Col>
                             <Contact width={props.width} componentScheme={props.componentScheme}/>
                         </Col>
-                    </Row>
-                    {props.width <= 768 ?
+                    </Row>:null}
+                    {props.width < 768 ?
                         null :
                         <Row className="colFlexdiv2">
                             <ListViewOfMe/>

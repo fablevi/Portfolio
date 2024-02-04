@@ -38,10 +38,10 @@ function Contact(props) {
         <div className="contact">
             {props.width > 768 ?
                 <>
-                    <div style={{ width: props.width > 1350 ? "50%":"70%", display: "flex", justifyContent: "space-evenly" }}>
+                    <div style={{ width: props.width > 1350 ? "50%":"80%", display: "flex", justifyContent: "space-evenly" }}>
                         {components}
                     </div>
-                    <div style={{ width: props.width > 1350 ? "50%":"30%"}}></div>
+                    <div style={{ width: props.width > 1350 ? "50%":"20%"}}></div>
                 </>
                 :
                 components
