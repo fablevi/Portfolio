@@ -18,8 +18,7 @@ function Schools(props) {
 
     return <>
         {SchoolJSON.map((data, index) => {
-            return <div key={index}>
-                <div className="myCard">
+            return <div key={index} className="myCard">
                     <Container fluid>
                         <Row>
                             <Col>
@@ -45,7 +44,6 @@ function Schools(props) {
                             </Col>
                         </Row>
                     </Container>
-                </div>
             </div>
         })}
     </>
