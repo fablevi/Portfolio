@@ -1,8 +1,8 @@
 @media (any-pointer: fine) {
     .containerBG>div::before {
-        background: radial-gradient(1000px circle at var(--mouse-x) var(--mouse-y),
+        background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
             rgb(0 203 255 / 15%),
-                transparent 40%);
+                transparent 50%);
         border-radius: inherit;
         content: "";
         height: 100%;

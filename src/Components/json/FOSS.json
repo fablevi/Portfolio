@@ -1,0 +1,20 @@
+[
+    {
+        "name":"portfolio",
+        "githubLink":"https://github.com/fablevi/portfolio",
+        "programLanguages":"React.JS, Abode_Spectral.js",
+        "short_list":"This is my first portfolio project. I wanted to make my own designe, but in the process i realiesed i suck at desinging 😆, so I get insipartion from some other projects on the web."
+    },
+    {
+        "name":"On the top",
+        "githubLink":"https://github.com/fablevi/OnTheTop-fablevi.github.io",
+        "programLanguages":"GnomeJS",
+        "short_list":"I work ubuntu as a daily driver on my laptop, and i lovin' it. But sometimes i don't have some features what i need. This is one of them. Back in time i needed a settings that can make a window float on every other window, but i didn't knew there is a secret button, so i made one ofr myself and contributed it. Right now (2024/feb/06) people downloaded it more then 700 🎉"
+    },
+    {
+        "name":"SpringBoot backend",
+        "githubLink":"https://github.com/fablevi/SpringBoot_Backend",
+        "programLanguages":"Java, SpringBoot framework",
+        "short_list":"I realy love java, and i love doing backend thing. I worked with Node.js and Python (flask), but i feel like need to learn some java backend to. So right now im still learning every bit of this framework for my own joy 🙂"
+    }
+]
