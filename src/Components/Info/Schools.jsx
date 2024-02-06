@@ -5,8 +5,6 @@ import SchoolJSON from "../json/Schools.json";
 
 import gdeIMG from "../imgs/gde.jpg"
 import katker from "../imgs/katker.jpg"
-import MapIcon from "../../icons_set/MapIcon";
-import Diploma from "../../icons_set/DiplomaSVG";
 
 function Schools(props) {
 
@@ -17,6 +15,7 @@ function Schools(props) {
     ]
 
     return <>
+      <h1 style={{textAlign:"center"}}>Schools</h1>
         {SchoolJSON.map((data, index) => {
             return <div key={index} className="myCard">
                     <Container fluid>

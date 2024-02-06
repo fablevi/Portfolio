@@ -8,7 +8,7 @@ function ScrollBox(props) {
             setVisibility(false)
             setTimeout(()=>{
                 props.setVisibility(false)
-            },900)
+            },200)
     }
 
     return <>

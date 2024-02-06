@@ -5,6 +5,7 @@ import { Col, Row } from "react-bootstrap";
 import Contact from "../Left/Contact";
 import Schools from "../Info/Schools";
 import FOSSProjects from "../Info/FOSSProjects";
+import Skills from "../Info/Skills";
 
 function RightBox(props) {
 
@@ -29,7 +30,7 @@ function RightBox(props) {
                    <FOSSProjects width={props.width} componentScheme={props.componentScheme}/> 
                 </div>
                 <div id="skills">
-                    div2
+                    <Skills width={props.width} componentScheme={props.componentScheme}/>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo id urna iaculis posuere. Nullam fermentum dolor a justo malesuada, ut posuere orci suscipit. Maecenas et hendrerit nisl. Integer consectetur nisi ut arcu hendrerit, sit amet varius odio dictum. In hac habitasse platea dictumst. Sed gravida purus vel diam vestibulum, a aliquam metus consectetur. Duis tincidunt, libero id fermentum tristique, nunc justo dignissim nisl, vel dictum nulla purus sit amet elit. Nulla facilisi. Nulla facilisi. Curabitur nec elit a quam sodales vestibulum. Ut eu quam nec tortor congue tristique id ut elit.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo id urna iaculis posuere. Nullam fermentum dolor a justo malesuada, ut posuere orci suscipit. Maecenas et hendrerit nisl. Integer consectetur nisi ut arcu hendrerit, sit amet varius odio dictum. In hac habitasse platea dictumst. Sed gravida purus vel diam vestibulum, a aliquam metus consectetur. Duis tincidunt, libero id fermentum tristique, nunc justo dignissim nisl, vel dictum nulla purus sit amet elit. Nulla facilirightBoxInfoDivsi. Nulla facilisi. Curabitur nec elit a quam sodales vestibulum. Ut eu quam nec tortor congue tristique id ut elit.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo id urna iaculis posuere. Nullam fermentum dolor a justo malesuada, ut posuere orci suscipit. Maecenas et hendrerit nisl. Integer consectetur nisi ut arcu hendrerit, sit amet varius odio dictum. In hac habitasse platea dictumst. Sed gravida purus vel diam vestibulum, a aliquam metus consectetur. Duis tincidunt, libero id fermentum tristique, nunc justo dignissim nisl, vel dictum nulla purus sit amet elit. Nulla facilisi. Nulla facilisi. Curabitur nec elit a quam sodales vestibulum. Ut eu quam nec tortor congue tristique id ut elit.
