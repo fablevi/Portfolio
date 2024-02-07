@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "./static/css/main.11b17c5b.css",
+    "main.js": "./static/js/main.bd0b29ae.js",
+    "static/media/katker.jpg": "./static/media/katker.6957383bf61a298abc9d.jpg",
+    "static/media/gde.jpg": "./static/media/gde.01510dfdf297bbcc2b35.jpg",
+    "index.html": "./index.html",
+    "main.11b17c5b.css.map": "./static/css/main.11b17c5b.css.map",
+    "main.bd0b29ae.js.map": "./static/js/main.bd0b29ae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11b17c5b.css",
+    "static/js/main.bd0b29ae.js"
+  ]
+}
