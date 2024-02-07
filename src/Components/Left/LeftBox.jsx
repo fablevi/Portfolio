@@ -37,7 +37,7 @@ function LeftBox(props) {
                     {props.width < 768 ?
                         null :
                         <Row className="colFlexdiv2">
-                            <ListViewOfMe/>
+                            <ListViewOfMe componentScheme={props.componentScheme}/>
                         </Row>
                     }
 
