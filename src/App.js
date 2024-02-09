@@ -10,7 +10,7 @@ import SchemeChangerButton from "./Components/Menu/SchemeChangerButton.jsx";
 
 function App() {
   if (!localStorage.getItem("componentScheme")) {
-    localStorage.setItem("componentScheme", "light");
+    localStorage.setItem("componentScheme", "dark");
   }
 
   const [componentScheme, setComponentScheme] = useState(localStorage.getItem("componentScheme"));

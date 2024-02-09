@@ -1,0 +1,24 @@
+{
+    "small_text_array":[
+        [
+            "In the first time when i learn some programming in the school, i learn C#. I loved it back then, but now i'm using linux, so it is way harder to program with it. ",
+            "C#'s IDE is Visual Studio and it doesn't have real alternative on linux, so i switch to Java☕️ and SpringBoot 🌱. "
+        ],
+        [
+            "Why is Java? Because it cross platform, OOP, SpringBoot is a well made framework, good for medium and big companies backend, stable most of the cases, and have a lot of documentation on the web. ",
+            "SpringBoot is easy to learn, but i feel like the biggest problem with it, is the error logging. Sometimes doesn't get back what is the real problem, only show what happened, like doesn't sees some values or @Autowired annotations. ",
+            "But i like to work with SpringBoot. "
+        ],
+        [
+            " What is with the frontend? I use React⚛️, JQuery, sometimes Typescript and vanilla JavaScript. I want to learn Svelte too. ",
+            "Why React? It is popular, and popularity means easy to find problems for my code. I love how it works, I love JSX format on the code, and i know i need to learn more about it. ",
+            "I worked with some MSSQL and MYSQL databases. Next step is some NoSQL databases like MongoDB. "
+        ],
+        [
+            "As i sad i work on linux for my Opensource projects. My DE is Gnome on Ubuntu. I wrote one extension for it, and i want to write another on for my own joy. 😄 "
+        ],
+        [
+            "AI is my favourite of all of them! Now i'm doing some research about StableDiffusion, WhisperAI and GPT/LLAMA models to make some AI for my projects. In the future probably i need to buy a better videocard for it 😂 "
+        ] 
+    ]
+}

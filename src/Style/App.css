@@ -139,10 +139,10 @@
   overflow-x: auto;
   top: 0;
   left: 0;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(10px);
   width: -webkit-fill-available;
   width: -moz-available;
-  height: inherit;
+  height: 98%;
   margin: 1vh;
   z-index: 1;
 }
@@ -296,4 +296,24 @@
   background-color: rgba(5, 31, 71, 0.212);
   border-color: rgb(0 206 255 / 40%);
   color: white;
+}
+
+.skillsIconDiv{
+  display:  flex;
+}
+
+.skillsIconDiv > div{
+  aspect-ratio: 1/1;
+}
+
+.skillsIconDiv > div > svg{
+  margin: 10%;
+}
+
+.skillsTextDiv{
+  margin-top: 20px;
+  border-top-color: rgba(0, 0, 0, 0.466);
+  border-top-width: 5px;
+  border-top-style: solid;
+
 }

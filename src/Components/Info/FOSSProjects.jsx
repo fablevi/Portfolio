@@ -5,10 +5,11 @@ import FOSS from "../json/FOSS.json"
 
 
 function FOSSProjects(props) {
+    
     return <div style={{ display: "flex", flexDirection: "column" }}>
         <h1 style={{ textAlign: "center" }}>GITHUB</h1>
         {FOSS.map((data, index) => {
-            return <div key={index} className="myFOSSCard" style={{ alignSelf: index % 2 === 1 ? "flex-end" : "flex-start" }}>
+            return <div key={index} className={props.width < 500 ? "myCard" : props.width > 768 && props.width <1050 ? "myCard"  : "myFOSSCard"} style={{ alignSelf: index % 2 === 1 ? "flex-end" : "flex-start" }}>
                 <Container fluid>
                     <Row>
                         <Col>
